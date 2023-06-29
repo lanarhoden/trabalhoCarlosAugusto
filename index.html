@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>DESAPEGA</title>
+</head>
+<body>
+    <div class="center-form">
+        <form>
+            <div class="inputbox">
+                <input type="text" name="produto">
+                <label for="produto">Produto</label>
+            </div>
+            
+            <p>Marca</p>
+            <div class="alignLeft">
+
+                <input type="radio" name="Nike" >
+                <label for="Nike">Nike</label>
+                <br>
+                <input type="radio" name="Allstar">
+                <label for="Allstar">All star</label>
+                <br>
+                <input type="radio" name="Puma">
+                <label for="Puma">Puma</label>
+                <br>
+                <input type="radio" name="Adidas">
+                <label for="Adidas">Adidas</label>
+                <br>
+                <input type="radio" name="Fila">
+                <label for="Fila">Fila</label>
+        </div>
+                
+                <div class="inputbox">
+                <input type="text" name="custo" id="custo">
+                <label for="custo" onchange="calc()">Preço de custo</label>
+            </div>
+            <div class="inputbox">
+                <input type="text" name="lucro" id="lucro" onchange="calc()">
+                <label for="lucro">Percentual de lucro</label>
+            </div>
+            
+            <div class="inputbox">
+                <input type="text" id="venda" name="venda">
+                <label for="venda">Preço de venda</label>
+            </div>
+            
+            <div class="inputbox">
+                <input type="text" name="quantidade" id="quantidade">
+                <label for="quantidade">Quantidade</label>
+            </div>
+            
+            <div class="inputbox">
+                <input type="file">
+            </div>
+
+            <button name="submit" onclick="click()" id="submit">Enviar</button>
+        </form>
+        <button onclick="toggleDarkMode()">trocar de cor</button>
+        <script src="script.js"></script>
+    </div>
+</body>
+</html>
